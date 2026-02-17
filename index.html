@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Rasmali!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <div id="slideshow-container"></div>
+    <div class="overlay"></div>
+
+    <main class="content">
+      <header class="hero">
+        <h1 class="title animate-pop-in">Happy Birthday <br><span>Rasmali</span></h1>
+        <p class="subtitle animate-fade-in">The countdown to your next big adventure begins...</p>
+      </header>
+
+      <section class="countdown-container animate-fade-in-up">
+        <div class="timer">
+          <div class="time-block">
+            <span id="days" class="number">00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="time-block">
+            <span id="hours" class="number">00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="time-block">
+            <span id="minutes" class="number">00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="time-block">
+            <span id="seconds" class="number">00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <audio id="bg-music" loop>
+      <!-- Providing a placeholder URL that is likely to work, but user may need to provide the actual file -->
+      <source src="https://archive.org/download/akon-bananza-belly-dancer/Akon%20-%20Bananza%20%28Belly%20Dancer%29.mp3"
+        type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
