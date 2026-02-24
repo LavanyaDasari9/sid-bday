@@ -1,5 +1,5 @@
 // Birthday Date
-const birthdayDate = new Date('February 24, 2026 00:00:00').getTime();
+const birthdayDate = new Date('February 25, 2026 00:00:00').getTime();
 
 // DOM Elements
 const daysEl = document.getElementById('days');
